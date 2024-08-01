@@ -51,4 +51,14 @@ class ExampleUnitTest {
         assertEquals("When Email is Valid", false, output)
     }
 
+    @Test
+    // Testing incorrect email address(@abc.com)
+    fun Test5()
+    {
+        val email = "@abc.com"
+        val output : Boolean = EmailValidator.isValidEmail(email)
+        assertEquals("When Email is Valid", false, output)
+    }
+
+
 }

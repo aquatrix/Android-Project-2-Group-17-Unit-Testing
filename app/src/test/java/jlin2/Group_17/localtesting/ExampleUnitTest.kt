@@ -14,4 +14,12 @@ class ExampleUnitTest {
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
+
+    @Test
+    fun Test1()
+    {
+        val email = "123@abc.com"
+        val output : Boolean = EmailValidator.isValidEmail(email)
+        assertEquals("When Email is Valid", true, output)
+    }
 }

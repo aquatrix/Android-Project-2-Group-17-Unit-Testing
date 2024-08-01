@@ -16,6 +16,7 @@ class ExampleUnitTest {
     }
 
     @Test
+//    Testing correct email address format
     fun Test1()
     {
         val email = "123@abc.com"
@@ -24,6 +25,7 @@ class ExampleUnitTest {
     }
 
     @Test
+//    Testing correct email with subdomain
     fun Test2()
     {
         val email = "123@abc.co.ca"
@@ -32,6 +34,7 @@ class ExampleUnitTest {
     }
 
     @Test
+//    Testing incorrect email address(123@abc)
     fun Test3()
     {
         val email = "123@abc"
@@ -40,13 +43,12 @@ class ExampleUnitTest {
     }
 
     @Test
+//    Testing incorrect email address(123@abc..com)
     fun Test4()
     {
         val email = "123@abc..com"
         val output : Boolean = EmailValidator.isValidEmail(email)
         assertEquals("When Email is Valid", false, output)
     }
-
-
 
 }
